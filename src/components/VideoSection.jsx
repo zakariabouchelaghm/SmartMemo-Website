@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const VideoSection = () => {
     return (
-        <section className="flex justify-center items-center py-20 px-4 bg-black/30 backdrop-blur-md">
+        <section className="flex justify-center items-center py-20 px-4">
             <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
