@@ -4,16 +4,15 @@ import { Download, ChevronRight } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center py-20 px-4 relative overflow-hidden">
+    <section className="flex flex-col justify-center items-center py-20 px-4 relative overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-green-500/20 rounded-full blur-[100px]" />
-      <div className="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[100px]" />
+
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="glass-panel p-4 md:p-12 max-w-4xl w-full flex flex-col items-center text-center z-10"
+        className="glass-panel p-4 md:p-12 max-w-5xl w-full flex flex-col items-center text-center z-10"
       >
         <motion.img
           initial={{ scale: 0.8, opacity: 0 }}
@@ -60,12 +59,7 @@ const Hero = () => {
           </motion.button>
         </div>
 
-        <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm text-gray-500">
-          <span>#AI</span>
-          <span>#KnowledgeManagement</span>
-          <span>#RAG</span>
-          <span>#Privacy</span>
-        </div>
+
       </motion.div>
     </section>
   );
